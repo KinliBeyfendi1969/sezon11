@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tarih Oyunu - 11. Sınıf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div id="api-modal">
+            <h2>Hoşgeldiniz!</h2>
+            <p style="margin-top:10px; color:#666;">Oyunu başlatmak için OpenRouter API anahtarına ihtiyacınız var.</p>
+            
+            <div class="api-input-group">
+                <input type="password" id="api-key-input" class="api-input" placeholder="OpenRouter API Anahtarınızı yapıştırın">
+                
+                <select id="model-select" class="model-select">
+                    <option value="openai/gpt-3.5-turbo">GPT-3.5 Turbo (Hızlı/Ekonomik)</option>
+                    <option value="google/gemini-2.0-flash-exp">Gemini 2.0 Flash (Güncel)</option>
+                    <option value="nex-agi/deepseek-v3.1-nex-n1:free">DeepSeek v3.1 Nex (Ücretsiz)</option>
+                    <option value="openai/gpt-4">GPT-4 (En Akıllı)</option>
+                    <option value="anthropic/claude-3-haiku">Claude 3 Haiku (Hızlı)</option>
+                    <option value="meta-llama/llama-3.1-70b-instruct">Llama 3.1 70B (Açık Kaynak)</option>
+                </select>
+                
+                <button class="btn btn-start" onclick="startGame()">Oyuna Başla</button>
+            </div>
+            
+            <div class="api-info">
+                <p>OpenRouter API anahtarınızı <a href="https://openrouter.ai/keys" target="_blank" style="color: var(--accent);">openrouter.ai/keys</a> adresinden alabilirsiniz.</p>
+                <p>Not: Anahtarınız sadece tarayıcınızda kullanılır, sunucuya kaydedilmez. İlk kullanımlar için ücretsiz krediler mevcuttur.</p>
+            </div>
+        </div>
+
+        <div class="header">
+            <h1>AI Tarih Oyunu</h1>
+            <p>11. Sınıf Müfredatı - OpenRouter Destekli</p>
+        </div>
+        
+        <div class="game-container" id="game-container">
+            <div class="game-info">
+                <div class="info-item">Ünite: <span id="unit-disp">1</span>/5</div>
+                <div class="info-item">Model: <span id="model-disp">GPT-3.5</span></div>
+                <div class="info-item">Puan: <span id="score-disp">0</span></div>
+            </div>
+
+            <div class="loading" id="loading-box">
+                <div class="spinner"></div>
+                <p id="loading-text">Yapay zeka soru hazırlıyor...</p>
+            </div>
+            
+            <div id="active-game-area">
+                <div class="question-box">
+                    <div class="unit-badge" id="unit-name">Ünite Yükleniyor...</div>
+                    <div class="topic-title" id="topic-name">Konu Seçiliyor...</div>
+                    <div class="question-text" id="question-text">Soru buraya gelecek...</div>
+                </div>
+                
+                <textarea id="answer-input" placeholder="Cevabınızı buraya detaylı bir şekilde yazınız..."></textarea>
+                
+                <div style="display: flex; gap: 10px;">
+                    <button class="btn btn-primary" id="submit-btn" onclick="submitAnswer()">Cevabı Gönder</button>
+                    <button class="btn btn-success" id="next-btn" onclick="nextStage()">Sonraki Aşama</button>
+                    <button class="btn btn-primary" id="retry-btn" onclick="generateQuestion()" style="display:none; background-color: #ef6c00;">Yeni Soru İste</button>
+                </div>
+                
+                <div class="result-box" id="result-box">
+                    <div class="score-badge" id="score-badge">7/10</div>
+                    <div class="feedback-text" id="feedback-text"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="end-screen" id="end-screen">
+            <h2>Tebrikler! Oyunu Tamamladınız.</h2>
+            <p id="final-score-text" style="font-size: 1.2rem; margin-bottom: 20px;"></p>
+            <button class="btn btn-primary" onclick="location.reload()">Başa Dön</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

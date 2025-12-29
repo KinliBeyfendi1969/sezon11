@@ -1,0 +1,1 @@
+Bu dosyayı Openrotuer API çağıracak bir şekilde yeniden baştan yaz

@@ -1,0 +1,40 @@
+1.	Oyun aşamalardan oluşacak
+2. Sorular aşağıdaki konulardan oluşaktır
+	
+	"11.Sınıf Tarih Konuları
+	1.Ünite
+
+Değişen Dünya Dengeleri Karşısında Osmanlı Siyaseti
+1595-1700 Yılları Arasındaki Siyasi Gelişmeler
+Yüzyılda Değişen Siyasi Rekabet İçerisindeki Osmanlı Devleti Politikaları
+Avrupalı Güçlerin Değişen Denizcilik Stratejileri ve Etkileri
+1700-1774 Yılları Osmanlı Devletinin Yürüttüğü Rekabet
+2.Ünite
+
+Değişim Çağında Avrupa ve Osmanlı
+Avrupa’da Değişim Çağı
+Osmanlı Devleti’nde Değişim
+Osmanlı Devleti’nde İsyanlar ve Düzeni Koruma Çabaları
+3.Ünite
+
+Devrimler Çağında Değişen Devlet-Toplum İlişkileri
+İhtilaller Çağı
+Sanayi İnkılabı Sonrası Sömürgecilik Faaliyetleri ve Küresel Etkileri
+Osmanlı Devleti’nde Modern Orduya Geçiş
+Uluş Devletleşme ve Endüstrileşme Süreçlerinin Sosyal Yaşama Etkisi
+4.Ünite
+
+Uluslararası İlişkilerde Denge Stratejisi (1774-1914)
+XVIII-XX. Yüzyıl Siyasi Gelişmeler (1774-1914)
+Osmanlı Devleti’nin Siyasi Varlığına Yönelik İç ve Dış Tehditler
+Tanzimat Fermanı, Islahat Fermanı ve Kanun’ı Esasi’nin İçeriklerini Küresel ve Yerel Siyasi Şartlar Bağlamında Değerlendirme
+1876-1913 Arasında Gerçekleştirilen Darbelerin Osmanlı Siyasi Hayatına Etkisi
+5.Ünite
+
+ve XX. Yüzyılda Değişen Gündelik Hayat
+Osmanlı Devleti’nin Endüstriyel Üretime Geçiş Çabaları ve Yaşanan Zorluklar
+Osmanlı Devleti’nin Nüfus Hareketlerinin Sebep ve Sonuçlar
+Modernleşmeyle Birlikte Yaşanan Değişim ve Dönüşümler."
+
+3. Kullancı sorulan soruya cevap yazacak yazılan cevap yapay zeka tarafından değerlendirelek 1 ile 10 arasında puan verecek
+4. Verilen puan 5'in üzerindeyse bir sonraki aşamaya geçilerek bu döngü tekrar edilecek
